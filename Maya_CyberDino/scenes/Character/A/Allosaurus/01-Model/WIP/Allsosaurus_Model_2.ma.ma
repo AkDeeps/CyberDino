@@ -1,6 +1,10 @@
 //Maya ASCII 2017 scene
 //Name: Allsosaurus_Model_2.ma.ma
+<<<<<<< Updated upstream
 //Last modified: Mon, Feb 13, 2017 03:22:03 PM
+=======
+//Last modified: Sat, Feb 11, 2017 01:49:49 PM
+>>>>>>> Stashed changes
 //Codeset: 1252
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -15,8 +19,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "548AB249-4F69-FC2D-416F-70AF1688C561";
 	setAttr ".v" no;
+<<<<<<< Updated upstream
 	setAttr ".t" -type "double3" 2.2066991255729809 4.9865187650952363 3.3499678530610573 ;
 	setAttr ".r" -type "double3" -30.338352729756995 1209.3999999998794 0 ;
+=======
+	setAttr ".t" -type "double3" 9.9853517599539927 8.0633120188910876 11.948303808345848 ;
+	setAttr ".r" -type "double3" -18.938352729729054 1132.1999999998002 -2.5946468249083176e-015 ;
+>>>>>>> Stashed changes
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BA683B32-4B3A-B0D4-FEE9-62A249B1FB28";
 	setAttr -k off ".v" no;
@@ -24,7 +33,11 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
+<<<<<<< Updated upstream
 	setAttr ".coi" 4.1794218945898596;
+=======
+	setAttr ".coi" 11.22927336268074;
+>>>>>>> Stashed changes
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";

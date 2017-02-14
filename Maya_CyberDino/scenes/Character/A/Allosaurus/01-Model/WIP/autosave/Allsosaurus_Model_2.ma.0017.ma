@@ -1,11 +1,12 @@
 //Maya ASCII 2017 scene
-//Name: Allsosaurus_Model_2.ma.ma
-//Last modified: Tue, Feb 14, 2017 12:09:10 AM
+//Name: Allsosaurus_Model_2.ma.0017.ma
+//Last modified: Tue, Feb 14, 2017 12:07:54 AM
 //Codeset: 1252
 requires maya "2017";
 requires "stereoCamera" "10.0";
 requires "stereoCamera" "10.0";
 currentUnit -l meter -a degree -t film;
+fileInfo "exportedFrom" "C:/Users/djpen_000/Desktop/CyberDino/Maya_CyberDino/scenes/Character/A/Allosaurus/01-Model/WIP/Allsosaurus_Model_2.ma.ma";
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2017";
 fileInfo "version" "2017";
@@ -15,8 +16,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "548AB249-4F69-FC2D-416F-70AF1688C561";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.9501265755996187 14.73031198485001 6.598192622007268 ;
-	setAttr ".r" -type "double3" -42.338352716286629 434.19999999897612 0 ;
+	setAttr ".t" -type "double3" 5.4211913567332157 4.8871714511938045 16.873704651253906 ;
+	setAttr ".r" -type "double3" -7.5383527162832697 398.59999999901396 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "BA683B32-4B3A-B0D4-FEE9-62A249B1FB28";
 	setAttr -k off ".v" no;
@@ -24,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 17.171735048771275;
+	setAttr ".coi" 14.116528623290497;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -458,7 +459,6 @@ createNode parentConstraint -n "L_Shoulder_Jnt_parentConstraint1" -p "L_Shoulder
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 1.4210854715202004e-016 1.1368683772161603e-015 
 		2.2737367544323206e-015 ;
-	setAttr ".lr" -type "double3" 0 -3.0598664703567704 0 ;
 	setAttr ".rst" -type "double3" 0.32659712168044613 -1.1522453952417806 0.89827576494752526 ;
 	setAttr -k on ".w0";
 createNode joint -n "R_Shoulder_Jnt" -p "Upper_Chest_Jnt";
@@ -1104,7 +1104,6 @@ createNode transform -n "L_Arm_Jnt_1_Ctrl" -p "Upper_Chest_Ctrl";
 	setAttr -l on -k off ".tx";
 	setAttr -l on -k off ".ty";
 	setAttr -l on -k off ".tz";
-	setAttr ".r" -type "double3" 0 -3.0598664703567708 0 ;
 	setAttr ".s" -type "double3" 0.48766549994581659 0.48766549994581659 0.48766549994581659 ;
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
@@ -1256,14 +1255,7 @@ createNode poleVectorConstraint -n "L_Leg_IkHandle_poleVectorConstraint1" -p "L_
 	setAttr -k on ".w0";
 createNode transform -n "nurbsCircle8" -p "L_Leg_IkHandle";
 	rename -uid "BB7BF806-4C2C-1C4F-8105-20B5B66D8734";
-	setAttr -l on -k off ".v";
 	setAttr ".t" -type "double3" -0.90457144875272466 -1.7797582449626277 -1.1400654174404756 ;
-	setAttr -l on -k off ".tx";
-	setAttr -l on -k off ".ty";
-	setAttr -l on -k off ".tz";
-	setAttr -l on -k off ".sx";
-	setAttr -l on -k off ".sy";
-	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" 0.90457144611979357 0.87081314248550112 1.1400654240878079 ;
 	setAttr ".sp" -type "double3" 0.90457144611979357 0.87081314248550112 1.1400654240878079 ;
 createNode nurbsCurve -n "nurbsCircleShape8" -p "nurbsCircle8";
@@ -1287,13 +1279,6 @@ createNode nurbsCurve -n "nurbsCircleShape8" -p "nurbsCircle8";
 		;
 createNode transform -n "L_Leg_Jnt_2_Ctrl" -p "nurbsCircle8";
 	rename -uid "A3AFAD1E-4A34-9AE1-B539-A29A642322E4";
-	setAttr -l on -k off ".v";
-	setAttr -l on -k off ".tx";
-	setAttr -l on -k off ".ty";
-	setAttr -l on -k off ".tz";
-	setAttr -l on -k off ".sx";
-	setAttr -l on -k off ".sy";
-	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" 0.79952509450340237 0.20136240054825394 1.3518318029262018 ;
 	setAttr ".sp" -type "double3" 0.79952509450340237 0.20136240054825394 1.3518318029262018 ;
 createNode nurbsCurve -n "L_Leg_Jnt_2_CtrlShape" -p "L_Leg_Jnt_2_Ctrl";
@@ -1317,13 +1302,6 @@ createNode nurbsCurve -n "L_Leg_Jnt_2_CtrlShape" -p "L_Leg_Jnt_2_Ctrl";
 		;
 createNode transform -n "L_Leg_Jnt_3_Ctrl" -p "L_Leg_Jnt_2_Ctrl";
 	rename -uid "B254ED6E-4648-9364-DA9A-BDA9F1746F65";
-	setAttr -l on -k off ".v";
-	setAttr -l on -k off ".tx";
-	setAttr -l on -k off ".ty";
-	setAttr -l on -k off ".tz";
-	setAttr -l on -k off ".sx";
-	setAttr -l on -k off ".sy";
-	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" 0.77829274521789982 0.17361642838301852 1.6033421378367763 ;
 	setAttr ".sp" -type "double3" 0.77829274521789982 0.17361642838301852 1.6033421378367763 ;
 createNode nurbsCurve -n "L_Leg_Jnt_3_CtrlShape" -p "L_Leg_Jnt_3_Ctrl";
@@ -1383,14 +1361,7 @@ createNode poleVectorConstraint -n "R_Leg_IkHandle_poleVectorConstraint1" -p "R_
 	setAttr -k on ".w0";
 createNode transform -n "nurbsCircle9" -p "R_Leg_IkHandle";
 	rename -uid "61349D45-4F20-E763-0FF5-47AF1C93491C";
-	setAttr -l on -k off ".v";
 	setAttr ".t" -type "double3" 0.90931202843880132 -1.8174930166442715 -1.2443771495611937 ;
-	setAttr -l on -k off ".tx";
-	setAttr -l on -k off ".ty";
-	setAttr -l on -k off ".tz";
-	setAttr -l on -k off ".sx";
-	setAttr -l on -k off ".sy";
-	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" -0.90931202817955115 0.90854789550826387 1.2443771501440892 ;
 	setAttr ".sp" -type "double3" -0.90931202817955115 0.90854789550826387 1.2443771501440892 ;
 createNode nurbsCurve -n "nurbsCircleShape9" -p "nurbsCircle9";
@@ -1414,13 +1385,6 @@ createNode nurbsCurve -n "nurbsCircleShape9" -p "nurbsCircle9";
 		;
 createNode transform -n "R_Leg_Jnt_Ctrl_2" -p "nurbsCircle9";
 	rename -uid "ADDE4F0A-45DE-08FF-32AF-279DA1B1857B";
-	setAttr -l on -k off ".v";
-	setAttr -l on -k off ".tx";
-	setAttr -l on -k off ".ty";
-	setAttr -l on -k off ".tz";
-	setAttr -l on -k off ".sx";
-	setAttr -l on -k off ".sy";
-	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" -0.82757163841302683 0.24762712463287798 1.4322020379258988 ;
 	setAttr ".sp" -type "double3" -0.82757163841302683 0.24762712463287798 1.4322020379258988 ;
 createNode nurbsCurve -n "R_Leg_Jnt_Ctrl_Shape2" -p "R_Leg_Jnt_Ctrl_2";
@@ -1444,13 +1408,6 @@ createNode nurbsCurve -n "R_Leg_Jnt_Ctrl_Shape2" -p "R_Leg_Jnt_Ctrl_2";
 		;
 createNode transform -n "R_Leg_Jnt_Ctrl_3" -p "R_Leg_Jnt_Ctrl_2";
 	rename -uid "EB51F953-4432-2CD6-9A64-0CB8B2E5ADBF";
-	setAttr -l on -k off ".v";
-	setAttr -l on -k off ".tx";
-	setAttr -l on -k off ".ty";
-	setAttr -l on -k off ".tz";
-	setAttr -l on -k off ".sx";
-	setAttr -l on -k off ".sy";
-	setAttr -l on -k off ".sz";
 	setAttr ".rp" -type "double3" -0.82547695382633868 0.21500954382002455 1.6840228268183157 ;
 	setAttr ".sp" -type "double3" -0.82547695382633868 0.21500954382002455 1.6840228268183157 ;
 createNode nurbsCurve -n "R_Leg_Jnt_Ctrl_Shape3" -p "R_Leg_Jnt_Ctrl_3";
@@ -2273,7 +2230,7 @@ createNode parentConstraint -n "pCube12_parentConstraint1" -p "L_Arm_Geo_2";
 	setAttr ".tg[0].tot" -type "double3" -0.00084502008489472757 -0.49839120348076904 
 		-0.41111344064422611 ;
 	setAttr ".tg[0].tor" -type "double3" -50.056123150849594 0 0 ;
-	setAttr ".lr" -type "double3" -50.056123150849601 -3.0598664703567704 -1.9906847842139538e-016 ;
+	setAttr ".lr" -type "double3" -50.056123150849594 0 0 ;
 	setAttr ".rst" -type "double3" 0.32575210159555151 3.8899816344038851 6.1671255405504075 ;
 	setAttr ".rsrr" -type "double3" -50.056123150849594 0 0 ;
 	setAttr -k on ".w0";
@@ -2379,7 +2336,7 @@ createNode parentConstraint -n "pCube14_parentConstraint1" -p "L_Arm_Geo_3";
 	setAttr ".tg[0].tot" -type "double3" 0.0068320219793266551 -0.28526027376839524 
 		0.36486095635570565 ;
 	setAttr ".tg[0].tor" -type "double3" -47.719131720265956 0 0 ;
-	setAttr ".lr" -type "double3" -47.719131720265956 -3.0598664703567695 0 ;
+	setAttr ".lr" -type "double3" -47.719131720265956 0 0 ;
 	setAttr ".rst" -type "double3" 0.33342914365977272 3.1158849428216531 6.099582666191024 ;
 	setAttr ".rsrr" -type "double3" -47.719131720265956 0 0 ;
 	setAttr -k on ".w0";
@@ -2482,7 +2439,6 @@ createNode parentConstraint -n "pCube16_parentConstraint1" -p "L_Wrist_Geo";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.0013535535570429857 -0.15072094987588799 
 		0.091132993955721983 ;
-	setAttr ".lr" -type "double3" 0 -3.05986647035677 0 ;
 	setAttr ".rst" -type "double3" 0 0 -1.1368683772161603e-015 ;
 	setAttr -k on ".w0";
 createNode transform -n "R_Wrist_Geo" -p "Geometry";
@@ -5481,4 +5437,4 @@ connectAttr "groupId5.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId7.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId8.msg" ":initialShadingGroup.gn" -na;
 connectAttr "ikRPsolver.msg" ":ikSystem.sol" -na;
-// End of Allsosaurus_Model_2.ma.ma
+// End of Allsosaurus_Model_2.ma.0017.ma

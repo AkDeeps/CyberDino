@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
-//Name: GenericMesh2.1.0031.ma
-//Last modified: Fri, Apr 07, 2017 12:27:46 PM
+//Name: Sam the samurai.ma
+//Last modified: Fri, Apr 07, 2017 12:28:10 PM
 //Codeset: 1252
 requires maya "2017";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandard"
@@ -79490,4 +79490,4 @@ connectAttr "|Geometry|Do_Curiass_Back|Do_Curiass_BackShape.iog" ":initialPartic
 		 -na;
 connectAttr "|Geometry|Do_Curiass_Front|Do_Curiass_FrontShape.iog" ":initialParticleSE.dsm"
 		 -na;
-// End of GenericMesh2.1.0031.ma
+// End of Sam the samurai.ma
